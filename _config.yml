@@ -8,3 +8,4 @@ include:
   - \src_ps2_settings\ps2Settings.md
   - README.md
 title: Tightanium Alloys
+show_downloads: true

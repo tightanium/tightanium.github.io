@@ -29,7 +29,7 @@ I disable this to reduce latency to the server. Basically it waits to fill up a 
 5. Save the `IPv4 address` of your primary network adapter. We will use this later. 
    - Typically, the correct adapter will have your ISP name show up under `Connection-specific DNS Suffix`.
 
-![ipconfig example](/images/ipconfig.png)
+![ipconfig example](/ps2_settings/images/ipconfig.png)
 
 **Disabling Nagle's Algorithm**
 1. `Right-click` on the `Start Menu` icon.
