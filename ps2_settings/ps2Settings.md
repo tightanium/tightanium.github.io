@@ -1,19 +1,27 @@
 # PS2 Settings and PC Optimizations
 
-A collection of my settings and optimizations. Mileage may vary.
+A collection of settings and optimizations I've collected over the years. Mileage may vary.
 
-<span style="color:red;font-size:18px">
-I am in no way responsible if you somehow manage to break something.
+**If you see something inaccurate, please let me know. I'm always keen to learn something new.**
+
+<span style="color:red;font-size:22px">
+I am in no way responsible if you somehow manage to break something. Follow along at your own peril.
 </span>
 
-## My Specs
+## My Specs & Performance
 
 Here are my specs so you have a reference point to compare to.
 
-CPU: AMD 5800x @ 4.6Ghz (Overclocked)
-RAM: Crucial 64GB @ 3600Mhz
-GPU: Nvidia GTX 2080 Ti
+OS: Windows 11 Pro (Version 21H2)
+CPU: AMD Ryzen 7 5800x @ 4.6Ghz (Overclocked on all cores - Base I think is 3.8Ghz)
+RAM: Crucial Ballistix 64GB @ 3600Mhz (Stock)
+GPU: Asus Nvidia GTX 2080 Ti (Stock)
 SSD: Samsung 970 Evo Plus 1Tb M.2 SSD - Game drive only. OS is on a separate M.2.
+
+At warpgate I average around 380 FPS with it occasionally going as high as 430 FPS.
+At big 100+ fights it drops down to around 150-180.
+
+**Huge thanks to Leondre and Coltorl for pointing out Malwarebytes eating my frames like a bio lab farm.**
 
 ---
 
@@ -27,19 +35,19 @@ I disable this to reduce latency to the server. Basically it waits to fill up a 
 **WARNING**
 </span>
 
-This involves editing the registry. Do not mess with anything else in here unless you want to introduce problems.
+This involves editing the Windows registry. Do not mess with anything else in here unless you know what you are doing.
 
-**Grab your primary network adapter's IPv4 address**
+**Save Your Primary Network Adapter's IPv4 Address**
 1. `Right-click` on the `Start Menu` icon.
 2. Select `Run`.
-3. Type `cmd` into the bar and press `OK`.
+3. Type in `cmd` and press `OK`.
 4. In the black window that shows up, type in `ipconfig /all` and press `Enter`.
 5. Save the `IPv4 address` of your primary network adapter. We will use this later. 
-   - Typically, the correct adapter will have your ISP name show up under `Connection-specific DNS Suffix`.
+   - Typically, the correct adapter will have your ISP's name show up under `Connection-specific DNS Suffix`.
 
 ![ipconfig example](/ps2_settings/images/ipconfig.png)
 
-**Disabling Nagle's Algorithm**
+**Disable Nagle's Algorithm**
 1. `Right-click` on the `Start Menu` icon.
 2. Select `Run`.
 3. Type in `regedit` and press `Ok`.
@@ -61,8 +69,17 @@ This involves editing the registry. Do not mess with anything else in here unles
 
 --- 
 
-### CPU Core Parking
+### CPU Core Parking & System Power Plans
 
-CPU core parking is a CPU power optimization that downclocks your CPU cores when not under load to decrease heat and power consumption. It takes time for your cores to ramp back up to full speed and results in lower and stuttery FPS performance. Disabling core parking will result in smoother and higher FPS performance at the cost of more heat and a higher base power consumption.
+CPU core parking is a CPU power optimization that downclocks your CPU cores when not under load to decrease heat and power consumption. It takes time for your cores to ramp back up to full speed and is the cause for lower and stuttery FPS performance. Disabling core parking will result in smoother and higher FPS performance at the cost of more heat and a higher base power consumption.
 
-There are a few programs out there that can disable CPU core parking. My favorite is [QuickCPU](https://coderbag.com/product/quickcpu). 
+There are a few programs out there that can disable CPU core parking. My favorite is [QuickCPU](https://coderbag.com/product/quickcpu) because it also provides extra controls over your system's power plan. 
+
+
+**Disable CPU Core Parking**
+To turn off CPU core parking, download and install [QuickCPU](https://coderbag.com/product/quickcpu) (The download is towards the bottom of the page). Once you have it installed and open, grab the slider at the bottom of the window labeled `Core parking` and bring it to `100%` and hit `Apply`. There's no need to keep the application open once set. Enjoy the extra frames.
+
+![parking](images/parking.png)
+
+---
+
