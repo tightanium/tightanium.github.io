@@ -2,9 +2,9 @@
 
 A collection of settings and optimizations I run on every Windows install for a better gaming experience. Mileage may vary.
 
-```diff
-- I am in no way responsible if you somehow manage to break something. However, I am willing to try to help you with your problem.
-```
+<span style="color:red;font-size:14px">
+I am in no way responsible if you somehow manage to break something. However, I am willing to try to help you with your problem.
+</span>
 
 ---
 
@@ -17,9 +17,9 @@ I disable this to reduce latency to the server. Basically it waits to fill up a 
 #### How To Disable Nagle's Algorithm
 
 **WARNING**
-```diff
-- This involves editing the registry. Do not mess with anything else in here unless you want to introduce problems.
-```
+<span style="color:red;font-size:14px">
+This involves editing the registry. Do not mess with anything else in here unless you want to introduce problems.
+</span>
 
 **Grab your primary network adapter's IPv4 address**
 1. `Right-click` on the `Start Menu` icon.
