@@ -6,11 +6,13 @@ A collection of settings and optimizations I run on every Windows install for a 
 - I am in no way responsible if you somehow manage to break something. However, I am willing to try to help you with your problem.
 ```
 
+---
+
 ## Windows Optimizations
 
 ### Nagle's Algorithm
 
-I disable this to reduce latency to the server. Basically it waits to fill up a packet with data - in our case, PS2 game updates - before sending it all at once. By disabling the algo, our computer will send more frequent updates at the cost of wasted space in the packet resulting in higher bandwidth consumption. You don't need to worry about this with modern networks.
+I disable this to reduce latency to the server. Basically it waits to fill up a packet with data - in our case, PS2 game updates - before sending it all at once. By disabling the algo, our computer will send more frequent updates and reduce our latency to the server at the cost of wasted space in the packet and higher bandwidth consumption. You shouldn't have to worry about this with modern networks unless you're on a data cap or a poor connection.
 
 #### How To Disable Nagle's Algorithm
 
@@ -25,8 +27,9 @@ I disable this to reduce latency to the server. Basically it waits to fill up a 
 3. Type `cmd` into the bar and press `OK`.
 4. In the black window that shows up, type in `ipconfig /all` and press `Enter`.
 5. Save the `IPv4 address` of your primary network adapter. We will use this later. 
-   a. Typically, the correct adapter will have your ISP name show up under:
-   ```Connection-specific DNS Suffix . : [Your Provider]``` 
+   - Typically, the correct adapter will have your ISP name show up under `Connection-specific DNS Suffix`.
+
+![ipconfig example](/images/ipconfig.png)
 
 **Disabling Nagle's Algorithm**
 1. `Right-click` on the `Start Menu` icon.

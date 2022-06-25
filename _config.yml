@@ -1,1 +1,9 @@
 theme: jekyll-theme-slate
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - \src_ps2_settings\ps2Settings.md
+  - README.md
