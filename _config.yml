@@ -5,7 +5,8 @@ relative_links:
   enabled: true
   collections: true
 include:
-  - \src_ps2_settings\ps2Settings.md
+  - /src_ps2_settings/ps2Settings.md
   - README.md
 title: Tightanium Alloys
-show_downloads: true
+description: tI aLlOyS!
+show_downloads: false
