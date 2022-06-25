@@ -1,19 +1,22 @@
 # PS2 Settings and PC Optimizations
 
-A collection of settings and optimizations I've collected over the years. Mileage may vary.
+This is a collection of settings and optimizations I've collected over the years. Mileage may vary.
 
 **If you see something inaccurate, please let me know. I'm always keen to learn something new.**
 
 <span style="color:red;font-size:22px">
 I am in no way responsible if you somehow manage to break something. Follow along at your own peril.
 </span>
+Making a system restore point prior to any of the Windows tweaks is highly encouraged if you're not sure of what you're doing.
+
+
 
 ## My Specs & Performance
 
-Here are my specs so you have a reference point to compare to.
+Here are my specs so you have a point of reference.
 
 OS: Windows 11 Pro (Version 21H2)
-CPU: AMD Ryzen 7 5800x @ 4.6Ghz (Overclocked on all cores - Base I think is 3.8Ghz)
+CPU: AMD Ryzen 7 5800x @ 4.6Ghz (Base I think is 3.8Ghz)
 RAM: Crucial Ballistix 64GB @ 3600Mhz (Stock)
 GPU: Asus Nvidia GTX 2080 Ti (Stock)
 SSD: Samsung 970 Evo Plus 1Tb M.2 SSD - Game drive only. OS is on a separate M.2.
@@ -22,6 +25,23 @@ At warpgate I average around 380 FPS with it occasionally going as high as 430 F
 At big 100+ fights it drops down to around 150-180.
 
 **Huge thanks to Leondre and Coltorl for pointing out Malwarebytes eating my frames like a bio lab farm.**
+
+---
+
+## Hardware Optimizations
+
+### Optimizing CPU & RAM
+
+I'm not going to go super in depth as this is a beast of a topic by itself. There are plenty of guides on the internet that cover this. The instructions are all going to be different based on your CPU and motherboard manufacturer anyway.
+
+As most of you already know, Planetside 2 is extremely CPU bottlenecked and benefits more from single-core performance over having more cores. If you have trouble reaching a higher core clock across the board, I recommend applying a per-core overclock on just the cores that you find Planetside runs on. In addition to increasing stability this has the added benefit of consuming less power and generating less heat than an overclock across the board.
+
+If you don't want to deal with it or don't know how, just turn on Precision Boost Overdrive (PBO) for AMD or Turbo Boost for Intel chips in your bios and call it a day.
+
+
+### Isolating Game Files & The OS
+
+This probably has the smallest impact on overall game performance, if any, out of all the tweaks I do. Where it does matter is redeploying and loading in to the next fight. 
 
 ---
 
@@ -65,15 +85,15 @@ This involves editing the Windows registry. Do not mess with anything else in he
      - Base: `Hexadecimal`
 7. You should end up with two keys that look like this if done correctly:
    ![nagles](images/nagles.png)
-8. Restart your computer.
+8. Close the window and restart your computer.
 
 --- 
 
 ### CPU Core Parking & System Power Plans
 
-CPU core parking is a CPU power optimization that downclocks your CPU cores when not under load to decrease heat and power consumption. It takes time for your cores to ramp back up to full speed and is the cause for lower and stuttery FPS performance. Disabling core parking will result in smoother and higher FPS performance at the cost of more heat and a higher base power consumption.
+CPU core parking is a CPU power optimization that puts your CPU cores into a power saving state when not under load to decrease heat and power consumption. It takes time for your cores to ramp back up to full speed and is the most likely cause for lower and stuttery FPS performance. Disabling core parking will result in smoother and higher FPS performance at the cost of more heat and a higher base power consumption.
 
-There are a few programs out there that can disable CPU core parking. My favorite is [QuickCPU](https://coderbag.com/product/quickcpu) because it also provides extra controls over your system's power plan. 
+There are a few programs out there that can disable CPU core parking. My favorite is [QuickCPU](https://coderbag.com/product/quickcpu) because it also provides controls over your system's power plan among other things not pertinent to this guide. 
 
 
 **Disable CPU Core Parking**
