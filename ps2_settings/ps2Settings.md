@@ -15,13 +15,14 @@ Making a system restore point prior to any of the Windows tweaks is highly encou
 
 Here are my specs so you have a point of reference.
 
-OS: Windows 11 Pro (Version 21H2)
-CPU: AMD Ryzen 7 5800x @ 4.6Ghz (Base I think is 3.8Ghz)
-RAM: Crucial Ballistix 64GB @ 3600Mhz (Stock)
-GPU: Asus Nvidia GTX 2080 Ti (Stock)
-SSD: Samsung 970 Evo Plus 1Tb M.2 SSD - Game drive only. OS is on a separate M.2.
+- OS: Windows 11 Pro (Version 21H2)
+- CPU: AMD Ryzen 7 5800x @ 4.6Ghz (Base I think is 3.8Ghz)
+- RAM: Crucial Ballistix 64GB @ 3600Mhz (Stock)
+- GPU: Asus Nvidia GTX 2080 Ti (Stock)
+- SSD: Samsung 970 Evo Plus 1Tb M.2 SSD - Game drive only. OS is on a separate M.2.
 
-At warpgate I average around 380 FPS with it occasionally going as high as 430 FPS.
+At the Oshur warpgate I average around 250+ FPS with it occasionally going as high as ~400 FPS at the less demanding warpgates.
+
 At big 100+ fights it drops down to around 150-180.
 
 **Huge thanks to Leondre and Coltorl for pointing out Malwarebytes eating my frames like a bio lab farm.**
@@ -91,9 +92,9 @@ This involves editing the Windows registry. Do not mess with anything else in he
 
 ### CPU Core Parking & System Power Plans
 
-CPU core parking is a CPU power optimization that puts your CPU cores into a power saving state when not under load to decrease heat and power consumption. It takes time for your cores to ramp back up to full speed and is the most likely cause for lower and stuttery FPS performance. Disabling core parking will result in smoother and higher FPS performance at the cost of more heat and a higher base power consumption.
+CPU core parking is an optimization scheme that puts your CPU cores into a power saving state when not under load to decrease heat and power consumption. It takes time for your cores to ramp back up to full speed and is a common cause for low and stuttering FPS performance. Disabling core parking will result in smoother and higher FPS performance at the cost of more heat and a higher base power consumption.
 
-There are a few programs out there that can disable CPU core parking. My favorite is [QuickCPU](https://coderbag.com/product/quickcpu) because it also provides controls over your system's power plan among other things not pertinent to this guide. 
+There are a few programs out there that can disable CPU core parking. My favorite is [QuickCPU](https://coderbag.com/product/quickcpu) because it also provides controls over your system's power plan among other things not entirely pertinent to Planetside. 
 
 
 **Disable CPU Core Parking**
